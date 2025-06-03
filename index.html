@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. 张三 - 学术主页</title>
+    
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Dr. 张三</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#research">研究成果</a></li>
+                <li><a href="#publications">论文发表</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>张三博士</h1>
+                <div class="subtitle">计算机科学研究员</div>
+                <div class="description">
+                    专注于人工智能、机器学习和数据科学领域的前沿研究。致力于推动技术创新，为学术界和工业界贡献力量。
+                </div>
+                <div class="cta-buttons">
+                    <a href="#research" class="btn btn-primary">查看研究成果</a>
+                    <a href="#contact" class="btn btn-outline">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="张三博士" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title scroll-animation">关于我</h2>
+            <div class="about-content">
+                <div class="about-stats scroll-animation">
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">发表论文</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">引用次数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">研究项目</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">年研究经验</div>
+                    </div>
+                </div>
+                <div class="about-text scroll-animation">
+                    <p>
+                        我是一名专注于人工智能和机器学习领域的资深研究员，拥有计算机科学博士学位。我的研究兴趣主要集中在深度学习、自然语言处理、计算机视觉等前沿技术领域。
+                    </p>
+                    <p>
+                        在过去的8年中，我主导和参与了多个重要的科研项目，发表了50多篇高质量学术论文，累计引用次数超过1000次。我致力于将理论研究与实际应用相结合，推动人工智能技术在各个领域的创新应用。
+                    </p>
+                    <p>
+                        除了学术研究，我还积极参与学术界的交流与合作，担任多个国际会议的审稿人和程序委员会成员，为推动学科发展贡献自己的力量。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title scroll-animation">教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2017-2021</div>
+                        <div class="timeline-title">计算机科学博士</div>
+                        <div class="timeline-institution">清华大学</div>
+                        <p>研究方向：深度学习与计算机视觉，导师：李四教授</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2015-2017</div>
+                        <div class="timeline-title">计算机科学硕士</div>
+                        <div class="timeline-institution">北京大学</div>
+                        <p>研究方向：机器学习与数据挖掘，GPA: 3.8/4.0</p>
+                    </div>
+                </div>
+                <div class="timeline-item scroll-animation">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2011-2015</div>
+                        <div class="timeline-title">计算机科学学士</div>
+                        <div class="timeline-institution">中国科学技术大学</div>
+                        <p>专业排名：前5%，优秀毕业生</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究成果 -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title scroll-animation">研究成果</h2>
+            <div class="research-grid">
+                <div class="research-card scroll-animation">
+                    <div class="research-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="research-title">深度学习优化算法</div>
+                    <div class="research-description">
+                        提出了一种新的自适应学习率优化算法，在多个基准数据集上实现了SOTA性能，相比传统方法提升了15%的准确率。
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag">深度学习</span>
+                        <span class="tag">优化算法</span>
+                        <span class="tag">SOTA</span>
+                    </div>
+                </div>
+                <div class="research-card scroll-animation">
+                    <div class="research-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="research-title">计算机视觉检测系统</div>
+                    <div class="research-description">
+                        开发了基于Transformer架构的目标检测模型，在COCO数据集上达到了最佳性能，并成功应用于工业质检领域。
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag">计算机视觉</span>
+                        <span class="tag">目标检测</span>
+                        <span class="tag">Transformer</span>
+                    </div>
+                </div>
+                <div class="research-card scroll-animation">
+                    <div class="research-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="research-title">自然语言处理模型</div>
+                    <div class="research-description">
+                        构建了多语言文本分类和情感分析系统，支持10种语言，在多个NLP竞赛中获得冠军。
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">多语言</span>
+                        <span class="tag">情感分析</span>
+                    </div>
+                </div>
+                <div class="research-card scroll-animation">
+                    <div class="research-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="research-title">强化学习框架</div>
+                    <div class="research-description">
+                        设计了分布式强化学习训练框架，将训练效率提升了3倍，并在复杂游戏环境中实现了超人类水平。
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag">强化学习</span>
+                        <span class="tag">分布式</span>
+                        <span class="tag">游戏AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 论文发表 -->
+    <section id="publications" class="section publications">
+        <div class="container">
+            <h2 class="section-title scroll-animation">论文发表</h2>
+            <div class="publication-list">
+                <div class="publication-item scroll-animation">
+                    <div class="publication-title">Adaptive Learning Rate Optimization for Deep Neural Networks</div>
+                    <div class="publication-authors">张三, 李四, 王五</div>
+                    <div class="publication-journal">Nature Machine Intelligence</div>
+                    <div class="publication-year">2024</div>
+                </div>
+                <div class="publication-item scroll-animation">
+                    <div class="publication-title">Transformer-based Object Detection with Enhanced Feature Fusion</div>
+                    <div class="publication-authors">张三, 赵六, 陈七</div>
+                    <div class="publication-journal">IEEE Transactions on Pattern Analysis and Machine Intelligence</div>
+                    <div class="publication-year">2023</div>
+                </div>
+                <div class="publication-item scroll-animation">
+                    <div class="publication-title">Multi-lingual Sentiment Analysis using Cross-lingual Transfer Learning</div>
+                    <div class="publication-authors">张三, 刘八, 周九</div>
+                    <div class="publication-journal">Proceedings of ACL 2023</div>
+                    <div class="publication-year">2023</div>
+                </div>
+                <div class="publication-item scroll-animation">
+                    <div class="publication-title">Distributed Reinforcement Learning for Complex Game Environments</div>
+                    <div class="publication-authors">张三, 吴十, 郑十一</div>
+                    <div class="publication-journal">International Conference on Machine Learning (ICML)</div>
+                    <div class="publication-year">2022</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">联系方式</h2>
+            <div class="contact-content-simple">
+                <div class="contact-info-grid">
+                    <div class="contact-item scroll-animation">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">邮箱</div>
+                            <div class="contact-value">zhangsan@university.edu.cn</div>
+                        </div>
+                    </div>
+                    <div class="contact-item scroll-animation">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">电话</div>
+                            <div class="contact-value">+86 138-0000-0000</div>
+                        </div>
+                    </div>
+                    <div class="contact-item scroll-animation">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">地址</div>
+                            <div class="contact-value">北京市海淀区清华大学</div>
+                        </div>
+                    </div>
+                    <div class="contact-item scroll-animation">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">
+                                <a href="https://github.com/your-username" target="_blank" style="color: white; text-decoration: underline;">
+                                    github.com/your-username
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
