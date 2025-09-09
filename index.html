@@ -54,7 +54,7 @@
             <div class="about-content">
                 <div class="about-stats scroll-animation">
                     <div class="stat-card">
-                        <div class="stat-number">2</div>
+                        <div class="stat-number">3</div>
                         <div class="stat-label">Published Papers</div>
                     </div>
                     <div class="stat-card">
@@ -165,6 +165,31 @@
 						<span class="tag">Deep learning</span>
                     </div>
                 </div>
+				<div class="research-card scroll-animation">
+                    <div class="research-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="research-title">Differentially Private Federated Learning with GAN-based Data Generation</div>
+                    <div class="research-description">
+                        Federated Learning (FL) aims to train neural network models using distributed data resources from multiple clients without sharing raw data.
+						One of the key challenges in FL is non-independent and identically distributed (non-IID) data, which may affect model accuracy. 
+						To address this issue, some schemes leverage Generative Adversarial Networks (GANs) to generate virtual data and combine it with the real data to achieve a balanced data distribution.
+						However, there are risks of privacy leakage from the collected virtual data and aggregated gradients. 
+						In this paper, we propose GetFed, an accurate and differentially private FL framework with GAN-based Data Generation on non-IID Data. 
+						We integrate Differential Privacy (DP) into the GAN training and federated aggregation phases to prevent clients' privacy leakage.
+						To balance privacy and accuracy, we first design a privacy-preserving virtual sample generation algorithm for GAN training that dynamically reduces unnecessary noise as the quality of virtual samples improves. 
+						Additionally, we design an adaptive DP-based secure aggregation algorithm that decreases the added noise as the model approaches convergence. 
+						Furthermore, we implement a real-virtual ensemble training algorithm, employing an ensemble learning strategy to better mix virtual and real samples for enhanced global model accuracy. 
+						This approach ensures clients benefit from both the authenticity of real samples and the balanced data distribution provided by virtual samples, effectively mitigating the data heterogeneity inherent in non-IID scenarios.
+						Extensive experiments demonstrate that compared with state-of-the-art schemes, GetFed improves model accuracy by 6--47% and reduces training time by 50%.
+                    </div>
+                    <div class="research-tags">
+                        <span class="tag">Federated Learning</span>
+                        <span class="tag">Non-IID Data</span>
+                        <span class="tag">Generative Adversarial Network</span>
+						<span class="tag">Differential Privacy</span>
+                    </div>
+                </div>
 <!--                 <div class="research-card scroll-animation">
                     <div class="research-icon">
                         <i class="fas fa-comments"></i>
@@ -205,13 +230,19 @@
                 <div class="publication-item scroll-animation">
                     <div class="publication-title">ACE-pFL: Accurate, Efficient Personalized Federated Learning with Knowledge Distillation</div>
                     <div class="publication-authors">Kun He, Hao Bai, Yuqing Li, Jing Chen, and Ruiying Du</div>
-                    <div class="publication-journal">IEEE/ACM Transactions on Networking (CCF-A类期刊)</div>
+                    <div class="publication-journal">IEEE Transactions on Networking (CCF-A类期刊)</div>
                     <div class="publication-year">2025</div>
                 </div>
                 <div class="publication-item scroll-animation">
                     <div class="publication-title">Efficient Privacy-preserving Inference based on Secret Sharing for Convolutional Neural Networks (基于秘密分享的高效隐私保护卷积神经网络预测)</div>
-                    <div class="publication-authors">Bai Hao, He Kun, Chen Jing, Zhao Chenbin, Du Ruiying</div>
+                    <div class="publication-authors">Bai Hao, He Kun, Chen Jing, Zhao Chenbin, and Du Ruiying</div>
                     <div class="publication-journal">软件学报 (CCF-T1类期刊)</div>
+                    <div class="publication-year">2025</div>
+                </div>
+				<div class="publication-item scroll-animation">
+                    <div class="publication-title">GetFed: Accurate, Differentially Private Federated Learning with GAN-based Data Generation</div>
+                    <div class="publication-authors">Hao Bai, Kun He, Yuqing Li, Jing Chen, Haowei Li, Zhongmou Liu, Xuanang Yang, and Ruiying Du</div>
+                    <div class="publication-journal">IEEE Transactions on Dependable and Secure Computing (CCF-A类期刊)</div>
                     <div class="publication-year">2025</div>
                 </div>
             </div>
