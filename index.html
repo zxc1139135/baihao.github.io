@@ -3,83 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>白浩 - 学术主页</title>
+    <title>白浩 | AI Security · Privacy</title>
     
     <!-- External Libraries -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">白浩</div>
+            <div class="logo">
+                <span class="logo-text">白浩</span>
+                <span class="logo-divider">|</span>
+                <span class="logo-subtitle">AI Security</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#education">教育背景</a></li>
-                <li><a href="#research">研究成果</a></li>
-                <li><a href="#publications">论文发表</a></li>
-                <li><a href="#contact">联系方式</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
+    <!-- 移动端导航菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
     <!-- 英雄区域 -->
     <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
         <div class="hero-content">
             <div class="hero-text">
-                <h1>白浩</h1>
-                <div class="subtitle">武汉大学在读博士生</div>
+                <div class="greeting">Hello, I'm</div>
+                <h1>白浩 <span class="name-en">Hao Bai</span></h1>
+                <div class="subtitle">
+                    <i class="fas fa-graduation-cap"></i>
+                    Ph.D. Candidate @ Wuhan University
+                </div>
                 <div class="description">
-                    专注于人工智能安全、机器学习隐私保护和数据安全领域的前沿研究。致力于推动技术创新，为学术界和工业界贡献力量。
+                    Focusing on cutting-edge research in <span class="highlight">AI Security</span>, 
+                    <span class="highlight">Machine Learning Privacy Protection</span>, and 
+                    <span class="highlight">Data Security</span>. Committed to advancing technological innovation 
+                    and contributing to both academia and industry.
+                </div>
+                <div class="research-interests">
+                    <span class="interest-tag"><i class="fas fa-shield-alt"></i> Federated Learning</span>
+                    <span class="interest-tag"><i class="fas fa-lock"></i> Differential Privacy</span>
+                    <span class="interest-tag"><i class="fas fa-brain"></i> Membership Inference</span>
+                    <span class="interest-tag"><i class="fas fa-key"></i> Secure Computation</span>
                 </div>
                 <div class="cta-buttons">
-                    <a href="#research" class="btn btn-primary">查看研究成果</a>
-                    <a href="#contact" class="btn btn-outline">联系我</a>
+                    <a href="#research" class="btn btn-primary">
+                        <i class="fas fa-flask"></i> View Research
+                    </a>
+                    <a href="#publications" class="btn btn-secondary">
+                        <i class="fas fa-file-alt"></i> Publications
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/zxc1139135" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:baihao@whu.edu.cn" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://scholar.google.com" target="_blank" class="social-link" title="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="./images/profile.jpg" alt="白浩博士" class="profile-img">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <img src="images/profile.jpg" alt="白浩" class="profile-img" onerror="this.src='https://via.placeholder.com/300x300/667eea/ffffff?text=BH'">
+                    <div class="profile-badge">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="floating-cards">
+                    <div class="float-card card-1">
+                        <i class="fas fa-award"></i>
+                        <span>3 Papers</span>
+                    </div>
+                    <div class="float-card card-2">
+                        <i class="fas fa-quote-left"></i>
+                        <span>10+ Citations</span>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
     <!-- 关于我 -->
-    <section id="about" class="section">
+    <section id="about" class="section about">
         <div class="container">
-            <h2 class="section-title scroll-animation">About Me</h2>
+            <h2 class="section-title scroll-animation">
+                <span class="title-icon"><i class="fas fa-user"></i></span>
+                About Me
+            </h2>
             <div class="about-content">
                 <div class="about-stats scroll-animation">
                     <div class="stat-card">
-                        <div class="stat-number">3</div>
+                        <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="stat-number" data-target="3">0</div>
                         <div class="stat-label">Published Papers</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">10+</div>
+                        <div class="stat-icon"><i class="fas fa-quote-right"></i></div>
+                        <div class="stat-number" data-target="10">0</div>
                         <div class="stat-label">Citations</div>
+                        <div class="stat-suffix">+</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">2+</div>
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-number" data-target="2">0</div>
                         <div class="stat-label">Research Projects</div>
+                        <div class="stat-suffix">+</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Years of Research Experience</div>
+                        <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Years of Research</div>
                     </div>
                 </div>
                 <div class="about-text scroll-animation">
-                    <p>
-                        我是一名专注于人工智能安全和机器学习隐私保护领域的科研人员，武汉大学在读博士生。我的研究兴趣主要集中在同态加密、安全多方计算、差分隐私、成员推理攻击、后门攻击等前沿技术领域。
-                    </p>
-                    <p>
-                        目前，我参与了多个重要的科研项目，发表了多篇高质量学术论文。我致力于将理论研究与实际应用相结合，推动人工智能安全和隐私保护技术在各个领域的创新应用。
-                    </p>
-                    <p>
-                        除了学术研究，我还积极参与学术界的交流与合作，担任国际会议和期刊的审稿人，为推动学科发展贡献自己的力量。
-                    </p>
+                    <div class="about-intro">
+                        <p class="lead">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            I am a researcher focused on AI security and machine learning privacy protection, 
+                            currently a Ph.D. candidate at Wuhan University.
+                        </p>
+                    </div>
+                    <div class="about-details">
+                        <p>
+                            My research interests mainly focus on cutting-edge technologies including 
+                            <strong>Homomorphic Encryption</strong>, <strong>Secure Multi-party Computation</strong>, 
+                            <strong>Differential Privacy</strong>, <strong>Membership Inference Attacks</strong>, 
+                            and <strong>Backdoor Attacks</strong>.
+                        </p>
+                        <p>
+                            Currently, I have participated in multiple important research projects and published 
+                            several high-quality academic papers in top-tier venues. I am committed to combining 
+                            theoretical research with practical applications, promoting innovative applications of 
+                            AI security and privacy protection technologies in various fields.
+                        </p>
+                        <p>
+                            In addition to academic research, I actively participate in academic exchanges and collaborations, 
+                            serving as a reviewer for international conferences and journals, contributing to the 
+                            advancement of the field.
+                        </p>
+                    </div>
+                    <div class="skills-section">
+                        <h4><i class="fas fa-code"></i> Technical Skills</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PyTorch</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Federated Learning</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Cryptography</span>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,30 +208,83 @@
     <!-- 教育背景 -->
     <section id="education" class="section education">
         <div class="container">
-            <h2 class="section-title scroll-animation">Education</h2>
+            <h2 class="section-title scroll-animation">
+                <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
+                Education
+            </h2>
             <div class="timeline">
+                <div class="timeline-line"></div>
                 <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-year">2024-</div>
-                        <div class="timeline-title">工学博士</div>
-                        <div class="timeline-institution">武汉大学</div>
-                        <p>研究方向：机器学习隐私保护与人工智能安全</p>
+                        <div class="timeline-header">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i> 2024 - Present
+                            </div>
+                            <div class="timeline-status status-current">In Progress</div>
+                        </div>
+                        <div class="timeline-title">Ph.D. in Engineering</div>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i> Wuhan University
+                        </div>
+                        <div class="timeline-description">
+                            <p><strong>Research Focus:</strong> Machine Learning Privacy Protection & AI Security</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Federated Learning</span>
+                                <span class="timeline-tag">Differential Privacy</span>
+                                <span class="timeline-tag">Secure Computation</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot">
+                        <i class="fas fa-award"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-year">2022-2024</div>
-                        <div class="timeline-title">工学硕士</div>
-                        <div class="timeline-institution">武汉大学</div>
-                        <p>研究方向：机器学习隐私保护与人工智能安全</p>
+                        <div class="timeline-header">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i> 2022 - 2024
+                            </div>
+                            <div class="timeline-status status-completed">Completed</div>
+                        </div>
+                        <div class="timeline-title">M.Eng. in Engineering</div>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i> Wuhan University
+                        </div>
+                        <div class="timeline-description">
+                            <p><strong>Research Focus:</strong> Machine Learning Privacy Protection & AI Security</p>
+                            <div class="timeline-tags">
+                                <span class="timeline-tag">Privacy-preserving ML</span>
+                                <span class="timeline-tag">Neural Network Security</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item scroll-animation">
+                    <div class="timeline-dot">
+                        <i class="fas fa-medal"></i>
+                    </div>
                     <div class="timeline-content">
-                        <div class="timeline-year">2018-2022</div>
-                        <div class="timeline-title">工学学士</div>
-                        <div class="timeline-institution">武汉大学</div>
-                        <p>专业排名：前1%，优秀毕业生</p>
+                        <div class="timeline-header">
+                            <div class="timeline-year">
+                                <i class="fas fa-calendar"></i> 2018 - 2022
+                            </div>
+                            <div class="timeline-status status-completed">Completed</div>
+                        </div>
+                        <div class="timeline-title">B.Eng. in Engineering</div>
+                        <div class="timeline-institution">
+                            <i class="fas fa-university"></i> Wuhan University
+                        </div>
+                        <div class="timeline-description">
+                            <p><strong>Achievement:</strong> Top 1% in Major, Outstanding Graduate</p>
+                            <div class="timeline-achievements">
+                                <span class="achievement"><i class="fas fa-trophy"></i> Top 1%</span>
+                                <span class="achievement"><i class="fas fa-star"></i> Outstanding Graduate</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,105 +292,96 @@
     </section>
 
     <!-- 研究成果 -->
-    <section id="research" class="section">
+    <section id="research" class="section research">
         <div class="container">
-            <h2 class="section-title scroll-animation">Research</h2>
+            <h2 class="section-title scroll-animation">
+                <span class="title-icon"><i class="fas fa-flask"></i></span>
+                Research
+            </h2>
             <div class="research-grid">
                 <div class="research-card scroll-animation">
-                    <div class="research-icon">
-                        <i class="fas fa-brain"></i>
+                    <div class="research-header">
+                        <div class="research-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="research-category">Federated Learning</div>
                     </div>
-                    <div class="research-title">Personalized Federated Learning Framework</div>
+                    <div class="research-title">ACE-pFL: Personalized Federated Learning Framework</div>
                     <div class="research-description">
-                        In this paper, we propose a new accurate and efficient pFL framework based on KD, called ACE-pFL. Our proposed EMD-based client clustering addresses the adverse effect of
-						non-IID data in pFL. We design the dynamic distillation
-						temperature adjustment method to better adapt to the dynamic
-						training process of pFL. We employ the triple distillation
-						strategy to leverage not only the knowledge from aggregated
-						global soft predictions but also the implicit knowledge from local
-						and global perspectives. Experimental results demonstrate
-						that ACE-pFL achieves a tripartite balance between testing
-						accuracy, training time, and communication overhead.
+                        <p>We propose a novel accurate and efficient personalized federated learning (pFL) framework 
+                        based on Knowledge Distillation, called <strong>ACE-pFL</strong>.</p>
+                        <ul class="research-highlights">
+                            <li><i class="fas fa-check"></i> EMD-based client clustering for non-IID data</li>
+                            <li><i class="fas fa-check"></i> Dynamic distillation temperature adjustment</li>
+                            <li><i class="fas fa-check"></i> Triple distillation strategy leveraging global and local knowledge</li>
+                            <li><i class="fas fa-check"></i> Achieves balance between accuracy, training time, and communication</li>
+                        </ul>
                     </div>
                     <div class="research-tags">
-                        <span class="tag">Personalized Federated Learning</span>
-                        <span class="tag">Knowledge Distillation</span>
-                        <span class="tag">Non-IID Data</span>
+                        <span class="tag"><i class="fas fa-network-wired"></i> Personalized FL</span>
+                        <span class="tag"><i class="fas fa-graduation-cap"></i> Knowledge Distillation</span>
+                        <span class="tag"><i class="fas fa-database"></i> Non-IID Data</span>
+                    </div>
+                    <div class="research-footer">
+                        <span class="venue"><i class="fas fa-book"></i> IEEE ToN (CCF-A)</span>
                     </div>
                 </div>
+
                 <div class="research-card scroll-animation">
-                    <div class="research-icon">
-                        <i class="fas fa-eye"></i>
+                    <div class="research-header">
+                        <div class="research-icon icon-purple">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="research-category">Privacy-preserving ML</div>
                     </div>
-                    <div class="research-title">Convolutional Neural Network Privacy-preserving Inference System</div>
+                    <div class="research-title">Privacy-preserving CNN Inference System</div>
                     <div class="research-description">
-                        We propose an efficient privacy-preserving convolutional neural network (CNN) inference scheme. 
-						This scheme exploits the different computational characteristics of the linear and non-linear layers in CNN, and designs a matrix split computing protocol and a parameterized quadratic polynomial approximation for the ReLU activation function. 
-						This enables efficient and secure computation of both the linear and non-linear layers, while mitigating the prediction accuracy loss caused by the approximations. 
-						The computations in both the linear and nonlinear layers can be performed using lightweight cryptographic primitives such as secret sharing. 
-						Theoretical analysis and experimental results show that, while ensuring security, the proposed scheme improves prediction speed by a factor of 2 to 15, with only about a 2% loss in prediction accuracy.
+                        <p>An efficient privacy-preserving convolutional neural network (CNN) inference scheme 
+                        that exploits different computational characteristics of linear and non-linear layers.</p>
+                        <ul class="research-highlights">
+                            <li><i class="fas fa-check"></i> Matrix split computing protocol design</li>
+                            <li><i class="fas fa-check"></i> Parameterized quadratic polynomial approximation for ReLU</li>
+                            <li><i class="fas fa-check"></i> Secret sharing based lightweight cryptographic primitives</li>
+                            <li><i class="fas fa-check"></i> 2-15x speedup with only ~2% accuracy loss</li>
+                        </ul>
                     </div>
                     <div class="research-tags">
-                        <span class="tag">Privacy-preserving inference</span>
-                        <span class="tag">Convolutional neural network</span>
-                        <span class="tag">Non-linear approximation</span>
-						<span class="tag">Secret sharing</span>
-						<span class="tag">Deep learning</span>
+                        <span class="tag"><i class="fas fa-eye-slash"></i> Privacy-preserving</span>
+                        <span class="tag"><i class="fas fa-brain"></i> CNN</span>
+                        <span class="tag"><i class="fas fa-key"></i> Secret Sharing</span>
+                    </div>
+                    <div class="research-footer">
+                        <span class="venue"><i class="fas fa-book"></i> Journal of Software (CCF-T1)</span>
                     </div>
                 </div>
-				<div class="research-card scroll-animation">
-                    <div class="research-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <div class="research-title">Differentially Private Federated Learning with GAN-based Data Generation</div>
-                    <div class="research-description">
-                        Federated Learning (FL) aims to train neural network models using distributed data resources from multiple clients without sharing raw data.
-						One of the key challenges in FL is non-independent and identically distributed (non-IID) data, which may affect model accuracy. 
-						To address this issue, some schemes leverage Generative Adversarial Networks (GANs) to generate virtual data and combine it with the real data to achieve a balanced data distribution.
-						However, there are risks of privacy leakage from the collected virtual data and aggregated gradients. 
-						In this paper, we propose GetFed, an accurate and differentially private FL framework with GAN-based Data Generation on non-IID Data. 
-						We integrate Differential Privacy (DP) into the GAN training and federated aggregation phases to prevent clients' privacy leakage.
-						To balance privacy and accuracy, we first design a privacy-preserving virtual sample generation algorithm for GAN training that dynamically reduces unnecessary noise as the quality of virtual samples improves. 
-						Additionally, we design an adaptive DP-based secure aggregation algorithm that decreases the added noise as the model approaches convergence. 
-						Furthermore, we implement a real-virtual ensemble training algorithm, employing an ensemble learning strategy to better mix virtual and real samples for enhanced global model accuracy. 
-						This approach ensures clients benefit from both the authenticity of real samples and the balanced data distribution provided by virtual samples, effectively mitigating the data heterogeneity inherent in non-IID scenarios.
-						Extensive experiments demonstrate that compared with state-of-the-art schemes, GetFed improves model accuracy by 6--47% and reduces training time by 50%.
-                    </div>
-                    <div class="research-tags">
-                        <span class="tag">Federated Learning</span>
-                        <span class="tag">Non-IID Data</span>
-                        <span class="tag">Generative Adversarial Network</span>
-						<span class="tag">Differential Privacy</span>
-                    </div>
-                </div>
-<!--                 <div class="research-card scroll-animation">
-                    <div class="research-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="research-title">自然语言处理模型</div>
-                    <div class="research-description">
-                        构建了多语言文本分类和情感分析系统，支持10种语言，在多个NLP竞赛中获得冠军。
-                    </div>
-                    <div class="research-tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">多语言</span>
-                        <span class="tag">情感分析</span>
-                    </div>
-                </div>
+
                 <div class="research-card scroll-animation">
-                    <div class="research-icon">
-                        <i class="fas fa-robot"></i>
+                    <div class="research-header">
+                        <div class="research-icon icon-green">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="research-category">Differential Privacy</div>
                     </div>
-                    <div class="research-title">强化学习框架</div>
+                    <div class="research-title">GetFed: Differentially Private FL with GAN</div>
                     <div class="research-description">
-                        设计了分布式强化学习训练框架，将训练效率提升了3倍，并在复杂游戏环境中实现了超人类水平。
+                        <p><strong>GetFed</strong>: An accurate and differentially private FL framework with 
+                        GAN-based Data Generation on non-IID Data.</p>
+                        <ul class="research-highlights">
+                            <li><i class="fas fa-check"></i> Integrated DP in GAN training and federated aggregation</li>
+                            <li><i class="fas fa-check"></i> Dynamic noise reduction as virtual sample quality improves</li>
+                            <li><i class="fas fa-check"></i> Adaptive DP-based secure aggregation algorithm</li>
+                            <li><i class="fas fa-check"></i> 6-47% accuracy improvement, 50% training time reduction</li>
+                        </ul>
                     </div>
                     <div class="research-tags">
-                        <span class="tag">强化学习</span>
-                        <span class="tag">分布式</span>
-                        <span class="tag">游戏AI</span>
+                        <span class="tag"><i class="fas fa-network-wired"></i> Federated Learning</span>
+                        <span class="tag"><i class="fas fa-robot"></i> GAN</span>
+                        <span class="tag"><i class="fas fa-user-shield"></i> Differential Privacy</span>
                     </div>
-                </div> -->
+                    <div class="research-footer">
+                        <span class="venue"><i class="fas fa-book"></i> IEEE TDSC (CCF-A)</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -225,25 +389,101 @@
     <!-- 论文发表 -->
     <section id="publications" class="section publications">
         <div class="container">
-            <h2 class="section-title scroll-animation">Publication</h2>
+            <h2 class="section-title scroll-animation">
+                <span class="title-icon"><i class="fas fa-file-alt"></i></span>
+                Publications
+            </h2>
+            <div class="publication-filters scroll-animation">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="2025">2025</button>
+                <button class="filter-btn" data-filter="journal">Journal</button>
+            </div>
             <div class="publication-list">
-                <div class="publication-item scroll-animation">
-                    <div class="publication-title">ACE-pFL: Accurate, Efficient Personalized Federated Learning with Knowledge Distillation</div>
-                    <div class="publication-authors">Kun He, Hao Bai, Yuqing Li, Jing Chen, and Ruiying Du</div>
-                    <div class="publication-journal">IEEE Transactions on Networking (CCF-A类期刊)</div>
-                    <div class="publication-year">2025</div>
+                <div class="publication-item scroll-animation" data-year="2025" data-type="journal">
+                    <div class="publication-number">01</div>
+                    <div class="publication-content">
+                        <div class="publication-venue-badge">
+                            <span class="badge-ccf">CCF-A</span>
+                            <span class="badge-year">2025</span>
+                        </div>
+                        <div class="publication-title">
+                            ACE-pFL: Accurate, Efficient Personalized Federated Learning with Knowledge Distillation
+                        </div>
+                        <div class="publication-authors">
+                            <span class="author">Kun He</span>, 
+                            <span class="author highlight-author">Hao Bai</span>, 
+                            <span class="author">Yuqing Li</span>, 
+                            <span class="author">Jing Chen</span>, 
+                            <span class="author">Ruiying Du</span>
+                        </div>
+                        <div class="publication-journal">
+                            <i class="fas fa-book-open"></i> IEEE Transactions on Networking
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-code"></i> Code</a>
+                            <a href="#" class="pub-link"><i class="fas fa-quote-right"></i> Cite</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="publication-item scroll-animation">
-                    <div class="publication-title">Efficient Privacy-preserving Inference based on Secret Sharing for Convolutional Neural Networks (基于秘密分享的高效隐私保护卷积神经网络预测)</div>
-                    <div class="publication-authors">Bai Hao, He Kun, Chen Jing, Zhao Chenbin, and Du Ruiying</div>
-                    <div class="publication-journal">软件学报 (CCF-T1类期刊)</div>
-                    <div class="publication-year">2025</div>
+
+                <div class="publication-item scroll-animation" data-year="2025" data-type="journal">
+                    <div class="publication-number">02</div>
+                    <div class="publication-content">
+                        <div class="publication-venue-badge">
+                            <span class="badge-ccf">CCF-T1</span>
+                            <span class="badge-year">2025</span>
+                        </div>
+                        <div class="publication-title">
+                            Efficient Privacy-preserving Inference based on Secret Sharing for Convolutional Neural Networks
+                            <span class="title-cn">(基于秘密分享的高效隐私保护卷积神经网络预测)</span>
+                        </div>
+                        <div class="publication-authors">
+                            <span class="author highlight-author">Hao Bai</span>, 
+                            <span class="author">Kun He</span>, 
+                            <span class="author">Jing Chen</span>, 
+                            <span class="author">Chenbin Zhao</span>, 
+                            <span class="author">Ruiying Du</span>
+                        </div>
+                        <div class="publication-journal">
+                            <i class="fas fa-book-open"></i> Journal of Software (软件学报)
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-quote-right"></i> Cite</a>
+                        </div>
+                    </div>
                 </div>
-				<div class="publication-item scroll-animation">
-                    <div class="publication-title">GetFed: Accurate, Differentially Private Federated Learning with GAN-based Data Generation</div>
-                    <div class="publication-authors">Hao Bai, Kun He, Yuqing Li, Jing Chen, Haowei Li, Zhongmou Liu, Xuanang Yang, and Ruiying Du</div>
-                    <div class="publication-journal">IEEE Transactions on Dependable and Secure Computing (CCF-A类期刊)</div>
-                    <div class="publication-year">2025</div>
+
+                <div class="publication-item scroll-animation" data-year="2025" data-type="journal">
+                    <div class="publication-number">03</div>
+                    <div class="publication-content">
+                        <div class="publication-venue-badge">
+                            <span class="badge-ccf">CCF-A</span>
+                            <span class="badge-year">2025</span>
+                        </div>
+                        <div class="publication-title">
+                            GetFed: Accurate, Differentially Private Federated Learning with GAN-based Data Generation
+                        </div>
+                        <div class="publication-authors">
+                            <span class="author highlight-author">Hao Bai</span>, 
+                            <span class="author">Kun He</span>, 
+                            <span class="author">Yuqing Li</span>, 
+                            <span class="author">Jing Chen</span>, 
+                            <span class="author">Haowei Li</span>, 
+                            <span class="author">Zhongmou Liu</span>, 
+                            <span class="author">Xuanang Yang</span>, 
+                            <span class="author">Ruiying Du</span>
+                        </div>
+                        <div class="publication-journal">
+                            <i class="fas fa-book-open"></i> IEEE Transactions on Dependable and Secure Computing
+                        </div>
+                        <div class="publication-links">
+                            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                            <a href="#" class="pub-link"><i class="fas fa-code"></i> Code</a>
+                            <a href="#" class="pub-link"><i class="fas fa-quote-right"></i> Cite</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,7 +492,13 @@
     <!-- 联系方式 -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title" style="color: white;">Contact Details</h2>
+            <h2 class="section-title scroll-animation" style="color: white;">
+                <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
+                Get In Touch
+            </h2>
+            <div class="contact-intro scroll-animation">
+                <p>Feel free to reach out for collaborations, research discussions, or any questions!</p>
+            </div>
             <div class="contact-content-simple">
                 <div class="contact-info-grid">
                     <div class="contact-item scroll-animation">
@@ -260,16 +506,18 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <div class="contact-label">Mail</div>
-                            <div class="contact-value">bh0036@whu.edu.cn</div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">
+                                <a href="mailto:baihao@whu.edu.cn">baihao@whu.edu.cn</a>
+                            </div>
                         </div>
                     </div>
                     <div class="contact-item scroll-animation">
                         <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="contact-details">
-                            <div class="contact-label">Telephone</div>
+                            <div class="contact-label">Phone</div>
                             <div class="contact-value">+86 187-4823-1316</div>
                         </div>
                     </div>
@@ -279,7 +527,10 @@
                         </div>
                         <div class="contact-details">
                             <div class="contact-label">Address</div>
-                            <div class="contact-value">湖北省武汉市东西湖区国家网络安全与人才创新基地新珈楼</div>
+                            <div class="contact-value">
+                                Xinjia Building, National Cybersecurity Center<br>
+                                Dongxihu District, Wuhan, Hubei, China
+                            </div>
                         </div>
                     </div>
                     <div class="contact-item scroll-animation">
@@ -289,8 +540,8 @@
                         <div class="contact-details">
                             <div class="contact-label">GitHub</div>
                             <div class="contact-value">
-                                <a href="https://github.com/zxc1139135" target="_blank" style="color: white; text-decoration: underline;">
-                                    github.com/your-username
+                                <a href="https://github.com/zxc1139135" target="_blank">
+                                    github.com/zxc1139135
                                 </a>
                             </div>
                         </div>
@@ -300,7 +551,40 @@
         </div>
     </section>
 
-    <!-- Custom Scripts -->
-    <script src="js/script.js"></script>
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">白浩</span>
+                    <span class="logo-subtitle">Hao Bai</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/zxc1139135" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:baihao@whu.edu.cn"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fas fa-graduation-cap"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hao Bai. All rights reserved.</p>
+                <p>Ph.D. Candidate @ Wuhan University</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
